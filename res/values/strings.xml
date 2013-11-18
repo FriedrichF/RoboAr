@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RoboArUnity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="availableDevices">Found Robo TX Controller(s):</string>
+    <string name="scanAgain">Scan again</string>
+    <string name="percentage">-- %</string>
+    <string name="lightSwitch">Lights on</string>
+    <string name="resetSliders">Reset Sliders</string>
+    <string name="btNotFound">Could not find any bluetooth module</string>
+    <string name="btActivationError">Could not activate the bluetooth module</string>
+    <string name="testName">Tests for the App</string>
+
+</resources>
