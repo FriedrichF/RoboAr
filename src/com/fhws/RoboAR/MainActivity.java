@@ -62,13 +62,8 @@ public class MainActivity extends QCARPlayerActivity {
         //if QCAR view has been found, add some android view/widget on top
         if (qcarView != null) {
             ViewGroup qcarParentView = (ViewGroup)(qcarView.getParent());
-            View myView = getLayoutInflater().inflate(R.layout.activity_main, null);
-            Button button = (Button)myView.findViewById(R.id.button1);
-            button.setOnClickListener(new OnClickListener(){
-            	public void onClick(View v) {
-            		Toast.makeText(getApplicationContext(), "msg msg", Toast.LENGTH_SHORT).show();
-            	}
-            });
+            View myView = getLayoutInflater().inflate(R.layout.control_gui, null);
+
             qcarParentView.addView(myView, new LayoutParams
 (LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
             mQCARView = qcarView;
