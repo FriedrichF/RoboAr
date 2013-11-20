@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#00000000"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
         <TextView
             android:id="@+id/tvMotorLeft"
@@ -38,7 +38,8 @@
         android:layout_width="0px"
         android:layout_height="match_parent"
         android:layout_weight="4"
-        android:background="#00000000" >
+        android:background="#00000000"
+        android:orientation="horizontal" >
 
         <CheckBox
             android:id="@+id/cbLightSwitch"
@@ -66,7 +67,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#00000000"
-        android:orientation="vertical" >
+        android:orientation="horizontal" >
 
         <TextView
             android:id="@+id/tvMotorRight"
