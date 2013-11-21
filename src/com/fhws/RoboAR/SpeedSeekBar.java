@@ -50,17 +50,17 @@ public class SpeedSeekBar extends SeekBar {
 			setProgress(localProgress);
 			onSizeChanged(getWidth(), getHeight(), 0, 0);
 			percentage = getPercentage();
-			//Controller.setMotor(getMotorSpeed(percentage), percentage, position);
+			MainActivity.setMotor(getMotorSpeed(percentage), percentage, position);
 			break;
 		case MotionEvent.ACTION_UP: //Listener anstatt koppelung
 			
-//			if (Controller.getResetBoxStatus())
-//			
-//			{
-//				setProgress(0);
-//				setProgress(160);
-//				Controller.setMotor(0, 0, position);
-//			}
+			if (MainActivity.getResetBoxStatus())
+			
+			{
+				setProgress(0);
+				setProgress(160);
+				MainActivity.setMotor(0, 0, position);
+			}
 			
 
 		case MotionEvent.ACTION_CANCEL:
