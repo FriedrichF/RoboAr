@@ -25,22 +25,18 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f080003;
-        public static final int action_settings=0x7f08000a;
-        public static final int button1=0x7f080000;
+        public static final int action_settings=0x7f080007;
+        public static final int bScanAgain=0x7f080001;
         public static final int cbLightSwitch=0x7f080004;
         public static final int cbSliders=0x7f080005;
-        public static final int sbMotorLeft=0x7f080002;
-        public static final int sbMotorRight=0x7f080007;
-        public static final int seekBar1=0x7f080008;
-        public static final int seekBar2=0x7f080009;
-        public static final int tvMotorLeft=0x7f080001;
-        public static final int tvMotorRight=0x7f080006;
+        public static final int lvFoundBtDevices=0x7f080002;
+        public static final int seekBarLeft=0x7f080003;
+        public static final int seekBarRight=0x7f080006;
+        public static final int tvFoundControllers=0x7f080000;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-        public static final int control_gui=0x7f030001;
-        public static final int speed_control=0x7f030002;
+        public static final int speed_control=0x7f030001;
     }
     public static final class menu {
         public static final int main=0x7f070000;

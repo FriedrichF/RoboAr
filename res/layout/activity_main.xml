@@ -1,20 +1,40 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    android:orientation="vertical"
+    android:background="#000000" >
 
-    <Button
-        android:id="@+id/button1"
+    <TextView
+        android:id="@+id/tvFoundControllers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp"
-        android:text="Button" />
+        android:layout_alignParentTop="true"
+        android:text="@string/availableDevices"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:paddingBottom="10px" />
+
+    <Button
+        android:id="@+id/bScanAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/scanAgain"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/lvFoundBtDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFoundControllers"
+        android:layout_toLeftOf="@+id/bScanAgain"
+        android:textColor="#FFFFFF" >
+
+    </ListView>
+
+
 
 </RelativeLayout>
