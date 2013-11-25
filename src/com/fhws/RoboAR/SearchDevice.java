@@ -19,6 +19,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +30,7 @@ public class SearchDevice extends Activity {
 
 	private ListView lvFoundDevices;
 	private Button btScan;
+	private ProgressBar progressbar;
 
 	private BluetoothAdapter btAdapter;
 	private List<String> adapterList;
@@ -113,6 +115,12 @@ public class SearchDevice extends Activity {
 				new OnItemClickListener() {
 					public void onItemClick(AdapterView<?> arg0, View arg1,
 							int arg2, long arg3) {
+						
+						//Buttons deaktivieren und ProgressBar starten
+						btScan.setEnabled(false);
+						progressbar = (ProgressBar) findViewById(R.id.StartUnityProgress);
+						progressbar.setVisibility(View.VISIBLE);
+						lvFoundDevices.setVisibility(View.INVISIBLE);
 
 						//Da sich der Nutzer ein Device ausgesucht hat, kann die Suche nach anderen Geräten beendet werden
 						btAdapter.cancelDiscovery();

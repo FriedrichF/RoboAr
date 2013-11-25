@@ -25,13 +25,14 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080007;
+        public static final int StartUnityProgress=0x7f080003;
+        public static final int action_settings=0x7f080008;
         public static final int bScanAgain=0x7f080001;
-        public static final int cbLightSwitch=0x7f080004;
-        public static final int cbSliders=0x7f080005;
+        public static final int cbLightSwitch=0x7f080005;
+        public static final int cbSliders=0x7f080006;
         public static final int lvFoundBtDevices=0x7f080002;
-        public static final int seekBarLeft=0x7f080003;
-        public static final int seekBarRight=0x7f080006;
+        public static final int seekBarLeft=0x7f080004;
+        public static final int seekBarRight=0x7f080007;
         public static final int tvFoundControllers=0x7f080000;
     }
     public static final class layout {

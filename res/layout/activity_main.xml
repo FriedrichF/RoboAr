@@ -35,6 +35,13 @@
 
     </ListView>
 
-
+    <ProgressBar
+        android:id="@+id/StartUnityProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFoundControllers"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
 
 </RelativeLayout>

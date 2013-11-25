@@ -176,8 +176,8 @@ public class MainActivity extends QCARPlayerActivity {
 	 */
 	public static void setMotor(int motorSpeed, int percentage, MotorPosition position) {
 
-		//Wenn der linke Motor
-		if (position == MotorPosition.LEFT)
+		//Wenn der rechte Motor
+		if (position == MotorPosition.RIGHT)
 		{
 			//Setzen der Textausgabe
 			//tvMotorLeft.setText( percentage + "%" );
@@ -209,7 +209,7 @@ public class MainActivity extends QCARPlayerActivity {
 			}
 		}
 
-		//Rechter Motor
+		//Linker Motor
 		else
 		{
 
